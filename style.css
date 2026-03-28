@@ -14,8 +14,11 @@ body {
 header,
 footer {
     display: flex;
-    position: relative;
+    position: absolute;
     font-size: 17px;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 40px;
 }
 
 .links {
@@ -34,7 +37,6 @@ footer {
 .item:hover {
     background-color: #a3b18a;
     transform: scale(1.05);
-    transition: all ease-in-out 0.2s;
 }
 
 .container {
@@ -43,6 +45,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    translate: 0 120px;
 }
 
 .item {
@@ -54,7 +57,26 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item .info {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.item:hover .info {
+    opacity: 1;
+    visibility: visible;
 }
 
 
@@ -79,6 +101,7 @@ footer nav a {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("naturalphoto.jpg");
     background-size: cover;
     background-position: center;
+    max-width: 100%;
 }
 
 .nature-text {
@@ -86,9 +109,18 @@ footer nav a {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     color: white;
-    font-size: 45px;
+    font-size: 60px;
+}
+
+.nature-text p {
+    font-size: 30px;
+    transform: translate(-4%, -70%);
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
 }
 
 .main-font {
