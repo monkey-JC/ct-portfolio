@@ -65,6 +65,8 @@ footer {
     overflow: hidden;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
+    text-decoration: none;
+    color: white;
 }
 
 .item .info {
