@@ -4,9 +4,12 @@ body {
     margin: 0px;
 }
 
-body {
-    background-color: #1c1c14;
-    font-family: 'Montserrat', sans-serif;
+.page-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+    position: relative;
 }
 
 header {
