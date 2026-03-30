@@ -1,6 +1,7 @@
 body {
     background-color: #344e41;
     font-family: 'Montserrat', sans-serif;
+    margin: 0px;
 }
 
 .page-layout {
@@ -62,17 +63,17 @@ footer {
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
 }
 
 .item .info {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(7px);
     transition: all 0.3s ease;
     color: white;
-    font-size: 12px;
-    text-align: center;
+    font-size: 20px;
+    text-align: justify;
     margin-top: 5px;
 }
 
@@ -122,8 +123,29 @@ footer nav a {
     color: white;
     font-size: 50px;
     text-align: center;
-
 }
+
+.explore {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #a3b18a;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.explore:hover {
+    background-color: #81b29a;
+    border-colour;
+    white
+}
+
+
 
 .main-font {
     font-family: 'Lora', serif;
