@@ -1,0 +1,110 @@
+body {
+    background-color: #344e41;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+.page-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+    position: relative;
+}
+
+header,
+footer {
+    display: flex;
+    position: absolute;
+    font-size: 17px;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px 40px;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.item:hover {
+    background-color: #a3b18a;
+    transform: scale(1.05);
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    translate: 0 120px;
+    margin-top: 80px;
+}
+
+.item {
+    width: 45%;
+    height: 500px;
+    background-color: #dad7cd;
+    font-size: 56px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.item .info {
+    opacity: 0;
+    transform: translateY(7px);
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.item:hover .info {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+footer nav a {
+    text-decoration: none;
+}
+
+
+.explore {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    padding: 10px 23px;
+    background-color: #a3b18a;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    font-family: Montserrat, sans-serif;
+    border: 1px solid white;
+}
+
+.explore:hover {
+    background-color: #81b29a;
+    border-color: white;
+}
