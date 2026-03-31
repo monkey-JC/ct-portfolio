@@ -95,14 +95,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    height: 90px;
+    height: 60px;
     background-color: #252519;
     color: #888878;
     font-family: 'verdana' sans-serif;
     font-size: 13px;
-    position: absolute;
-    bottom: 0;
-    width: 96.89%;
+    margin-top: 40px;
 }
 
 .mainheading {
