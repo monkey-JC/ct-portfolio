@@ -8,7 +8,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 90vh;
     position: relative;
 }
 
@@ -96,11 +95,20 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 0 40px;
-    height: 60px;
+    height: 90px;
     background-color: #252519;
     color: #888878;
     font-family: 'verdana' sans-serif;
     font-size: 13px;
-    border-radius: 20px 20px 0 0;
-    margin-top: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 96.89%;
+}
+
+.mainheading {
+    text-align: center;
+    transform: translateY(100%, 100%);
+    color: #f0ece3;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
 }
