@@ -20,7 +20,7 @@ header {
     background-color: #252519;
     color: #f0ece3;
     border-radius: 0 0 20px 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'verdana', sans-serif;
     font-size: 15px;
 }
 
@@ -109,4 +109,11 @@ footer {
     color: #f0ece3;
     font-size: 36px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.gitlink a {
+    color: #c9b99a;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
 }
